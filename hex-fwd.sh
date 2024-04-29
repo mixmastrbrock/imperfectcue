@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The path to the original .sub file
-original_file="path_to_your_file.sub"
+original_file="template.sub"
 
 # Verify that the file exists and is readable
 if [ ! -f "$original_file" ]; then
@@ -13,7 +13,7 @@ elif [ ! -r "$original_file" ]; then
 fi
 
 # Subdirectory for the output files
-output_dir="./modified_files"
+output_dir="./fwd"
 
 # Check if the output directory exists, if not, create it
 [ -d "$output_dir" ] || mkdir "$output_dir"
